@@ -8,39 +8,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/codinghtml_116569.png" type="image/x-icon">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    
     <title> Minha One Page </title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo da Empresa">
+            <img src="Imagens/codinghtml_116569.png" alt="logo">
         </div>
         <nav>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle">&#9776; Menu</label>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#depoimentos">Elas na Tech</a></li>
+                <li><a href="#contato">Contatos</a></li>
+                
+               
             </ul>
         </nav>
     </header>
     
     <main>
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Conheça nossa história e valores.</p>
-        </section>
-        
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <p>Oferecemos uma variedade de serviços incríveis.</p>
+        <div id="sobre" class="collapse show" aria-labelledby="headingOne headingSix" data-parent="#accordion">
+            <section class="home_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center col-about">
+                            <div class="we-content">
+                                <h2>Eu sou Rafaelly.</h2>
+                                <div class="text d-flex align-items-center">
+                                    <div class="rule"></div>
+                                    <h4> -Web Designer</h4>
+                                </div>
+                                <p>Sou uma web designer e desenvolvedora front-end, formada pela JA Brasil através do programa Elas na Tech 2023, focada em criar experiências excelentes para melhorar a vida das pessoas ao meu redor.</p>
+                                <button>
+                                    Leia mais
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-img">
+                                <img src="Imagens/IMG-20230804-WA0007.jpg" alt="foto perfil">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <section id="experiencia">
+            <h2>Experiência</h2>
+            <p>
+                5.2.	Conte como tudo começou, o início da jornada no Elas na Tech
+                5.3.	Quais desafios foram superados?
+                5.4.	Quais foram suas conquistas até aqui?
+                5.7.	Fale sobre sua experiência com o Elas na Tech, deixe seu depoimento
+            </p>
         </section>
         
         <!-- Outras seções aqui -->
@@ -50,46 +81,63 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/seuvideo" frameborder="0" allowfullscreen></iframe>
         </section>-->
         
-        <section class="container projects" id="projects">
+        <section id="projetos">
             <h2>Meus projetos</h2>
             <p>
                 Veja alguns dos projetos em que tive o prazer de trabalhar.
+                #CONQUISTAS
             </p>
             <div class="grid-projects">
             </div>
         </section>
 
-        <section id="video">
-            <h2>Vídeo</h2>
+        <section id="depoimentos">
+            <h2>Elas na Tech</h2>
             <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/seuvideo" frameborder="0" allowfullscreen></iframe>
             </div>
         
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo pelo e-mail: meuemail@example.com</p>
-        </section>
-        
         <section id="curriculo">
-            <h2>Currículo</h2>
+            <h2>Experiências</h2>
             <p>Aqui está o meu currículo para download:</p>
             <a href="/seu-cv.pdf" download>Download do Currículo</a>
         </section>
         
-        <section id="redessociais">
-            <h2>Redes Sociais</h2>
-            <p>Você pode me encontrar nas seguintes redes sociais:</p>
-            <ul>
-                <li><a href="https://www.facebook.com/seufacebook">Facebook</a></li>
-                <li><a href="https://twitter.com/seutwitter">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/seulinkedin">LinkedIn</a></li>
-            </ul>
+        <section id="contato">
+            <h2>Contatos</h2>
+            <p>Você pode entrar em contato comigo pelo e-mail: rafaelly.trindade@hotmail.com</p>
+            <p>Além disso, você pode me encontrar nas seguintes redes sociais:</p>
+
+            <div class="logos_footer">
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5598988399844">
+                        <img src="imagens/whatsapp.png" alt="Whatsapp" class="tamanho">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/rafaellycta/">
+                        <img src="imagens/instagram.png" alt="Instagram" class="tamanho">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/rafaelly-trindade">
+                        <img src="imagens/linkedin.png" alt="Linkedin" class="tamanho">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/rafaellytrindade/">
+                        <img src="imagens/github.png" alt="Git Hub" class="tamanho">
+                    </a>
+                </div>
+            </div>
+        
         </section>
         
     </main>
     
     <footer>
-        <p>&copy; 2023 Minha One Page</p>
+        <p> Copyright 2023 &copy; Rafaelly Trindade </p>
     </footer>
 </body>
 </html>
