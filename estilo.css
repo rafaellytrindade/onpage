@@ -5,25 +5,25 @@ body {
     padding: 0;
 }
 
-
 /* Estilos do header */
 
 .header{
     background-color: #731D1D;
     color: #fff;
-    padding: 1rem 1.2rem;
+    padding: 0.6rem 0.6rem;
     margin: auto;
     position: sticky;
     top:0;
     z-index: 999;
+    text-align: center;
+    font-size: 1rem;
     
 }
 
 .header_logo{
     width: 3em;
     height: auto;
-    margin-left: 2em;
-    justify-content: space-between;
+    
 }
 
 .header_nav{
@@ -113,8 +113,11 @@ ul{
 /* Estilos da section - */
 
 .home_section{
-    padding: 2em 0em;
+    padding: 2em 2em;
     background-color: #F2E5E4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 
@@ -124,28 +127,32 @@ ul{
     font-weight: 700;
     line-height: 1.3em;
     
-  }
-  .apresentacao .text h4{
+}
+
+.apresentacao .text h4{
     color:#400F0F;
     font-size: 28px;
     font-weight: 500;
-  }
+}
 
-  .apresentacao .text .rule{
-    width: 10px;
-    height: 1px;
+
+.apresentacao .text .rule{
+    width: 0.625rem;
+    height: 0.063rem;
     background-color: #731D1D;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     
 }
 
-  .apresentacao p{
-    color:black;
-    margin: 15px 0px 30px;
-  }
 
-  .apresentacao button{
-    padding: 10px 30px;
+.apresentacao p{
+    color:black;
+    margin: 0.938rem 0rem 1.875rem;
+}
+
+
+.apresentacao button{
+    padding: 0.625rem 1.875rem;
     background-color: transparent;
     border: 1px solid #070707;
     color: #731D1D;
@@ -153,13 +160,15 @@ ul{
     position: relative;
     transition: .5s ease-in-out all;
     z-index: 900;
-  }
+}
 
-  .apresentacao button i{
+
+.apresentacao button i{
     margin-left: 0.3em;
-  }
+}
 
-  .apresentacao button:before{
+
+.apresentacao button:before{
     position: absolute;
     content: '';
     top: 0;
@@ -168,15 +177,19 @@ ul{
     right: 100%;
     background-color: #F2B2AC;
     transition: .5s ease-in-out all;
-  }
-  .apresentacao button:hover:before{
-    right: 0;
-    z-index: -1;
-  }
-  .apresentacao button:hover{
+}
+
+
+.apresentacao button:hover{
     color: #ffffff;
     font-weight: 500;
-  }
+}
+
+.apresentacao button:hover:before{
+    right: 0;
+    z-index: -1;
+}
+
 
 .we-img img{
     border: 1em solid #F2B2AC;
@@ -187,8 +200,47 @@ img{
     
 }
 
+.legenda{
+    color: #400F0F;
+    background-color: #F2B2AC; 
+    display: inline;
+    padding: 0.125rem;
+    border-radius: 10px;
+}
 
-/* Estilos do menu de hambúrguer */
+.detalhes{
+    color: #400F0F;
+}
+
+
+.video-container {
+    max-width: 80rem; /* Largura máxima do contêiner */
+    text-align: center;
+    margin-top: 2em;
+    height: 60vh;
+}
+
+
+iframe{
+    max-width: 100%;
+    height: 100%;
+}
+
+#carroselprojetos {
+    max-width: 900px; 
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.carousel-inner {
+    max-width: 100%; /* Defina a largura máxima para ocupar todo o espaço disponível */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Imagens do carrossel ocupam toda a largura disponível */
+    height: auto; /* Mantenha a proporção original da imagem */
+}
+/* Estilos Onpage responsiva */
 
 @media screen and (min-width: 576px){/* menor que 576px  */ 
     
@@ -206,6 +258,7 @@ img{
 
     .header_logo{
         margin-left: 1em;
+        align-items: center;
         
     }
 
@@ -232,46 +285,34 @@ img{
         color: #ffffff;
     }
 
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
+    .video-container{
+        max-width: 100%;
     }
     
-    .video-container iframe,
     
-    .video-container object,
-    
-    .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
+   
     .logos_footer{
-        flex-direction:row;
         justify-content: center;
+        gap:1.5em;
     }
 }
 
 
-/* Estilos do footer - */
+/* Estilos do footer */
 footer {
     background-color: #F2F2F2;
     color: #2b1010;
     text-align: center;
-    padding: 1rem;
+    padding: 3em;
 
 }
 
 .logos_footer{
-    display: flex;
-    flex-direction: row;
     gap: 1em;
+    text-align: center;
+    display: flex; flex-direction: row; justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .tamanho{
@@ -284,5 +325,4 @@ footer {
     text-transform: uppercase;
     margin:0;
     padding-top: .8rem;
-    color: #D91A2A;
 }
