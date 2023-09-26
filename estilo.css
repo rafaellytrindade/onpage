@@ -3,26 +3,29 @@ body {
     font-family:crossorigin;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Estilos do header */
 
 .header{
     background-color: #731D1D;
-    color: #fff;
-    padding: 0.6rem 0.6rem;
+    color: #fffffffb;
+    padding: .3rem .3rem;
     margin: auto;
     position: sticky;
     top:0;
     z-index: 999;
     text-align: center;
     font-size: 1rem;
-    
+    padding-top: 1rem;
 }
 
 .header_logo{
-    width: 3em;
+    width: 3.5em;
     height: auto;
+    padding-bottom: .4em;
+    padding-top: .4em;
     
 }
 
@@ -39,7 +42,7 @@ body {
 .header_nav ul{
     padding: 0;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     font-size: .8em;
     list-style-type: none;
 }
@@ -112,12 +115,17 @@ ul{
 
 /* Estilos da section - */
 
+section {
+    height: 90vh; /* Cada seção ocupa toda a altura da janela de visualização */
+}
+
 .home_section{
-    padding: 2em 2em;
+    padding: 4rem 4rem;
     background-color: #F2E5E4;
     justify-content: center;
     align-items: center;
     display: flex;
+    
 }
 
 
@@ -230,6 +238,9 @@ iframe{
     max-width: 900px; 
     margin: 0 auto;
     margin-top: 2em;
+    height: 50vh;
+    display: flex;
+    
 }
 
 .carousel-inner {
@@ -238,8 +249,96 @@ iframe{
 
 .carousel-item img {
     max-width: 100%; /* Imagens do carrossel ocupam toda a largura disponível */
-    height: auto; /* Mantenha a proporção original da imagem */
+    height: 100%; /* Mantenha a proporção original da imagem */
+    
 }
+
+
+.container_skills {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%
+}
+
+.skills .container_skills .cards {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.skills .container_skills .cards .box {
+    position: relative;
+    text-align: center;
+    background-color: rgb(255, 250, 250);
+    width: 8rem;
+    aspect-ratio: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid #F2B2AC;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    flex-shrink: 0; /* Evita que os boxes sejam encolhidos */
+}
+
+.skills .container_skills .cards .box p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight:400;
+    color:#490101;
+    margin-bottom: 1.5rem
+}
+
+.skills .container_skills .cards .box img {
+    width: 2.7rem;
+}
+
+.skills .container_skills .cards .box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    bottom: -0.1rem;
+    left: 0
+}
+
+.skills .container_skills .cards .box:hover {
+    transform: scale(1.1)
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #F2F2F2;
+    color: #2b1010;
+    text-align: center;
+    padding: 2em;
+
+}
+
+.logos_footer{
+    gap: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: 0.6em;
+    margin:0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.tamanho{
+    width: 4em;
+}
+
 /* Estilos Onpage responsiva */
 
 @media screen and (min-width: 576px){/* menor que 576px  */ 
@@ -253,12 +352,11 @@ iframe{
         background-color: #731D1D;
         justify-content: space-between;
         align-items: center;
-
+        
     }
 
     .header_logo{
-        margin-left: 1em;
-        align-items: center;
+        margin-left: 2em;
         
     }
 
@@ -290,39 +388,26 @@ iframe{
     }
     
     
-   
     .logos_footer{
         justify-content: center;
         gap:1.5em;
     }
-}
+    
+    section{
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    }
 
+    .skills .container_skills h2 {
+        margin-bottom:5rem;
+    }
 
-/* Estilos do footer */
-footer {
-    background-color: #F2F2F2;
-    color: #2b1010;
-    text-align: center;
-    padding: 3em;
+    .skills .container_skills .cards .box{
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 
-}
-
-.logos_footer{
-    gap: 1em;
-    text-align: center;
-    display: flex; flex-direction: row; justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.tamanho{
-    width: 2.5em;
-}
-
-.texto_footer{
-    font-size: 0.6em;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin:0;
-    padding-top: .8rem;
 }
