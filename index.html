@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
  <!-- como escrever comentário -->
     <header class="header">
@@ -38,11 +39,18 @@
 
 
     <main>
-        <section id="apresentacao" class="home_section">
-        <div class="collapse show" aria-labelledby="headingOne headingSix" data-parent="#accordion">
-                <div class="container ">
-                    <div class="row ">
-                        <div class="col-lg-6 col-md-12 d-flex">
+        <section id="apresentacao">
+        <div class="collapse show " aria-labelledby="headingOne headingSix" data-parent="#accordion">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-6 order-md-2">
+                            <div class="we-img">
+                                <img src="Imagens/imagem perfil.jpg" alt="foto perfil" class="profile-image">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 order-md-1">
                             <div class="apresentacao">
                                 <h2>Olá! Eu sou a Rafaelly.</h2>
                                 <div class="text d-flex align-items-center">
@@ -57,12 +65,6 @@
                                     <button onclick="mostrarOcultarTexto()">Leia Mais</button>       
                             </div>
                         </div>
-
-                        <div class="col-lg-6 col-md-12 ">
-                            <div class="we-img">
-                                <img src="Imagens/imagem perfil.jpg" alt="foto perfil">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -72,22 +74,68 @@
 
         <section id="jornada">
                 <h2 class="main_content_title">Jornada</h2>
-                <p class="paragrafo">Aqui está o meu currículo para download:</p>
-                <p class="paragrafo">Eu realmente amo combinar tecnologia com criatividade pra criar aplicações úteis e agradáveis. Me sinto genuinamente feliz quando consigo dar vida a uma ideia através do desenvolvimento e é isso que me motiva nessa área.</p>
-                <a href="/seu-cv.pdf" download>Download do Currículo</a>
+                <p class="paragrafo">Acompanhe um pouco da minha <a href="https://www.canva.com/design/DAFv3s-243Y/view"  class="visualizar" target="_blank"> jornada</a> no Programa Elas Na Tech 2023:</p>
+            
+                <div id="carroseljornada" class="carousel slide carousel-dark " data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carroseljornada" data-bs-slide-to="6" aria-label="Slide 7"></button>    
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="https://www.canva.com/design/DAFv3s-243Y/view" target="_blank">
+                          <img src="Imagens/MINHA JORNADA/1.png" class="d-block w-100 img-fluid" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-item">          
+                          <img src="Imagens/MINHA JORNADA/2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="Imagens/MINHA JORNADA/3.png" class="d-block w-100" alt="..."> 
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagens/MINHA JORNADA/4.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="Imagens/MINHA JORNADA/5.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="Imagens/MINHA JORNADA/6.png" class="d-block w-100" alt="...">
+                      </div>
+                    
+                      <div class="carousel-item">
+                          <img src="Imagens/MINHA JORNADA/7.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                  
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carroseljornada" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carroseljornada" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
         </section>       
 
         <section id="desafios">
                 <h2 class="main_content_title">Desafios</h2>
                 <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt iure dolores fuga aliquam repellat. Odit voluptatem soluta non earum veritatis quibusdam illo numquam, tempore ad vel. Praesentium nobis quod cum?</p>
-                
+                <p>Uma curiosidade: 
+                </p>
         </section> 
             
         <section id="conquistas">
                 <h2 class="main_content_title">Conquistas</h2>
                 <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt iure dolores fuga aliquam repellat. Odit voluptatem soluta non earum veritatis quibusdam illo numquam, tempore ad vel. Praesentium nobis quod cum?</p>
     
-
         </section>  
 
         <section id="aprendizados">
@@ -137,68 +185,95 @@
     
     
 
-    <section id="projetos">
-            <h2 class="main_content_title">Projetos</h2>
-            <p class="paragrafo">
-                Aqui estão algumas das minhas conquistas, em que tive o prazer de trabalhar.
-                6.4.4.	Destaque de Projetos Principais: Selecione alguns dos seus projetos mais relevantes e impressionantes para destacar na página inicial do seu portfólio. Isso captura a atenção dos visitantes imediatamente
-                6.4.5.	Descrições Detalhadas: Para cada projeto, inclua descrições detalhadas que explicam o problema que você resolveu, as tecnologias que utilizou, o seu papel no projeto e os resultados alcançados. Isso demonstrará sua capacidade de comunicação e a profundidade do seu conhecimento
-                6.4.6.	Screenshots e Demonstração: Inclua capturas de tela dos projetos e, se possível, links para versões de demonstração ou repositórios no GitHub. Isso permite que os visitantes vejam diretamente o seu trabalho em ação
-            </p>
-            
-        <div id="carroselprojetos" class="carousel slide" data-interval= "1000" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carroselprojetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carroselprojetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carroselprojetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <a href="https://rafaellytrindade.github.io/tecnologia/" target="_blank">
-                    <div class="carousel-item active">
-                        <img src="Imagens/pexels-moose-photos-1586973.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <h5 class="legenda">First slide label</h5>
-                        <p class="detalhes">Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://rafaellytrindade.github.io/tecnologia/" target="_blank">
-                        <img src="Imagens/pexels-vojtech-okenka-392018.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5 class="legenda">Second slide label</h5>
-                          <p class="detalhes">Some representative placeholder content for the second slide.</p>
-                        </div>
-                        </a>
-                      </div>
     
-                      <div class="carousel-item">
-                        <a href="https://rafaellytrindade.github.io/tecnologia/" target="_blank">
-                        <img src="Imagens/pexels-moose-photos-1586973.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5 class="legenda">Third slide label</h5>
-                          <p class="detalhes">Some representative placeholder content for the third slide.</p>
-                        </div>
-                        </a>
-                      </div>
+    <section id="projetos"> 
+        <h2 class="main_content_title">Projetos</h2>
+                <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt iure dolores fuga aliquam repellat. Odit voluptatem soluta non earum veritatis quibusdam illo numquam, tempore ad vel. Praesentium nobis quod cum?</p>
+        <div class="container_card">
+            <div class="card">
+                <img src="Imagens/tempodeflorescer.JPG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tempo de Florescer</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/tempodeflorescer" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/tempodeflorescer/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/athandtecnologia.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">At Hand Tecnologia</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/athandtecnologia" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/athandtecnologia/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/arvorez.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Arvorez</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/arvorez" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/arvorez/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/calculadora.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Calculadora</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/calculadora" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/calculadora/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/rolesp.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">RoleSP</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/roleSP" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/roleSP/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/tecnologia.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tecnologia</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/tecnologia" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/tecnologia/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/dev.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Dev</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/dev" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/dev/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/flores.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Flores</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/flores" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/flores/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Imagens/modaljs.PNG" alt="Card Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Modal JS</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://github.com/rafaellytrindade/modaljs" class="btn btn-primary" target="_blank">Git Hub</a>
+                    <a href="https://rafaellytrindade.github.io/modaljs/" class="btn btn-secondary" target="_blank">Git Hub Pages</a>
+                </div>
+            </div>
             
         </div>
-            
-                <button class="carousel-control-prev" type="button" data-bs-target="#carroselprojetos" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carroselprojetos" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-        
     </section>
-
-
-    
-            
 
     <section id="depoimento">
             <h2 class="main_content_title">Depoimento</h2>
@@ -226,17 +301,7 @@
                     <img src="imagens/email.png" alt="email" class="tamanho">
                 </a>
             </div>
-            <div>
-                <a href="https://api.whatsapp.com/send?phone=5598988399844" target="_blank">
-                    <img src="imagens/whatsapp.png" alt="Whatsapp" class="tamanho">
-                </a>
-            </div>
 
-            <div>
-                <a href="https://www.instagram.com/rafaellycta/" target="_blank">
-                    <img src="imagens/instagram.png" alt="Instagram" class="tamanho">
-                </a>
-            </div>
             <div>
                 <a href="https://www.linkedin.com/in/rafaelly-trindade" target="_blank">
                     <img src="imagens/linkedin.png" alt="Linkedin" class="tamanho">
