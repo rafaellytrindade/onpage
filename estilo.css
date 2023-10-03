@@ -1,6 +1,5 @@
 /* Estilos gerais */
 body {
-    font-family:crossorigin;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -19,6 +18,7 @@ body {
     text-align: center;
     font-size: 1rem;
     padding-top: 1rem;
+    
 }
 
 .header_logo{
@@ -37,6 +37,10 @@ body {
     display: block;
 }
 
+ul{
+    margin: 0;
+}
+
 .header_nav ul{
     padding: 0;
     text-transform: uppercase;
@@ -45,9 +49,6 @@ body {
     list-style-type: none;
 }
 
-ul{
-    margin: 0;
-}
 
 .header_nav a{
     display: block;
@@ -56,6 +57,7 @@ ul{
     padding: 1em;
     border-radius: 1em;
 }
+
 
 .header_nav a:hover{
     background-color: #f2e5e446;
@@ -95,16 +97,8 @@ ul{
     max-width: 100%;
     margin: 0 auto;
     padding: 1em;
-   
 }
 
-.main_content{
-    background-color: #e1d9d9;
-    text-align: left;
-    padding-top: 1em;
-    padding-bottom: 2em;
-
-}
 
 .main_content_title{
     padding-top: 4em;
@@ -114,15 +108,15 @@ ul{
     line-height: 1.3em;
     font-weight: bold;
     justify-content: flex-start;
-    padding-left: 2em;
+    padding-left: 3em;
+    
 }
 
 .paragrafo{
     text-align:justify;
-    margin-left: 2rem;;
-    width: 90%;
-    margin-bottom: 0;
-    
+    margin-left: 4em;
+    margin-bottom: 1rem;
+    margin-right: 4em;
 }
 
 /* Estilos da section - */
@@ -242,7 +236,7 @@ iframe{
 }
 
 #carroseljornada {
-    max-width: 56.25em; 
+    max-width: 62.5em; 
     margin: 0 auto;
     margin-top: 2em;
     display: flex;
@@ -364,8 +358,6 @@ iframe{
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    
-    
 }
 
 ul.list-group {
@@ -373,6 +365,10 @@ ul.list-group {
     margin-left: 3em;
     padding-left: 3em;
    
+}
+
+.list-group{
+    margin: 1em 5em;
 }
 
 .item{
@@ -384,7 +380,7 @@ ul.list-group {
 article {
     display: flex;
     align-items: center;
-    margin: 1em 5em;
+    margin: 1em 4em;
 }
 
 
@@ -407,9 +403,7 @@ h5 {
     margin: 0; /* Remova margens padrão para melhorar o espaçamento */
 }
 
-p {
-    margin: 0; /* Remova margens padrão para melhorar o espaçamento */
-}
+
 
 /* Estilos do footer */
 footer {
@@ -441,6 +435,7 @@ footer {
 
 @media screen and (min-width: 576px) {
     
+   
     #hamburguer{
         display: none;
     }
@@ -450,7 +445,6 @@ footer {
         background-color: #731D1D;
         justify-content: space-between;
         align-items: center;
-        
     }
 
     .header_logo{
@@ -508,6 +502,7 @@ footer {
     .we-img{
         align-items:end;
     }
+
     .order-md-1{
         order: 2; 
     }
@@ -515,9 +510,15 @@ footer {
         order: 1; 
     }
 
-    .card{
-        flex-basis: calc(33.33% - 20px);
+
+    .container_card{
+        flex-direction: row;
     }
+
+    .card{
+        flex-basis: calc(33.33% - 18px);
+    }
+   
 
     article {
         flex-direction: row; /* Altera para o layout padrão de linha */
