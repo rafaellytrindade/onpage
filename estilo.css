@@ -25,8 +25,6 @@ body {
     width: 3.5em;
     height: auto;
     padding-bottom: .4em;
-    padding-top: .4em;
-    
 }
 
 .header_nav{
@@ -121,7 +119,7 @@ ul{
 
 .paragrafo{
     text-align:justify;
-    margin: 2rem;
+    margin-left: 2rem;;
     width: 90%;
     margin-bottom: 0;
     
@@ -363,16 +361,23 @@ iframe{
 }
 
 .container_lista {
-    margin:5rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+    
 }
-  
-.list-group {
-    margin-bottom: 20px;
+
+ul.list-group {
+    list-style-type: square; /* Define o tipo de marcador como círculos */
+    margin-left: 3em;
+    padding-left: 3em;
+   
 }
-  
-.list-group-item {
-    border-radius: 0;
+
+.item{
+    margin-bottom: 1em;
+    white-space: nowrap;
 }
 
 
@@ -381,6 +386,7 @@ article {
     align-items: center;
     margin: 1em 5em;
 }
+
 
 .icon-container {
     margin-right: 10px; /* Espaçamento à direita do ícone */
@@ -487,10 +493,6 @@ footer {
         gap:1.5em;
     }
 
-    section{
-        margin-top: 2rem;
-       
-    }
 
     .skills .container_skills h2{
         margin-bottom:5rem;
