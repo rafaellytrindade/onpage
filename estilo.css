@@ -109,8 +109,8 @@ ul{
 }
 
 .main_content_title{
-    padding-top: 4.5em;
-    padding-bottom: 1em;
+    padding-top: 4em;
+    padding-bottom: 0.7em;
     color: #400F0F; 
     font-size: 2.18em;
     line-height: 1.3em;
@@ -121,8 +121,10 @@ ul{
 
 .paragrafo{
     text-align:justify;
-    margin: auto;
+    margin: 2rem;
     width: 90%;
+    margin-bottom: 0;
+    
 }
 
 /* Estilos da section - */
@@ -279,8 +281,6 @@ iframe{
     transition: transform 0.8s ease-in-out;
 }
 
-
-
 .card .btn:hover{
     background-color: #ffffff;
     color: #0f0f0f;
@@ -360,6 +360,49 @@ iframe{
 
 .skills .container_skills .cards .box:hover {
     transform: scale(1.1)
+}
+
+.container_lista {
+    margin:5rem;
+    text-align: center;
+}
+  
+.list-group {
+    margin-bottom: 20px;
+}
+  
+.list-group-item {
+    border-radius: 0;
+}
+
+
+article {
+    display: flex;
+    align-items: center;
+    margin: 1em 5em;
+}
+
+.icon-container {
+    margin-right: 10px; /* Espaçamento à direita do ícone */
+}
+
+.text-container {
+    flex-grow: 1; /* Expande para ocupar todo o espaço disponível à direita do ícone */
+    text-align:left;
+}
+
+.config-img {
+    width: 3.5em;
+}
+
+/* Estilos opcionais */
+h5 {
+    font-size: 18px; /* Tamanho do título */
+    margin: 0; /* Remova margens padrão para melhorar o espaçamento */
+}
+
+p {
+    margin: 0; /* Remova margens padrão para melhorar o espaçamento */
 }
 
 /* Estilos do footer */
@@ -473,4 +516,18 @@ footer {
     .card{
         flex-basis: calc(33.33% - 20px);
     }
+
+    article {
+        flex-direction: row; /* Altera para o layout padrão de linha */
+    }
+
+    .icon-container {
+        margin-right: 20px; /* Aumenta o espaçamento à direita do ícone */
+    }
+
+    .text-container {
+        flex-grow: 0; /* Impede a expansão para ocupar o espaço disponível */
+        width: auto; /* Define a largura automática para acomodar o conteúdo */
+    }
+
 }
