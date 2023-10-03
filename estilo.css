@@ -114,7 +114,7 @@ ul{
 
 .paragrafo{
     text-align:justify;
-    margin-left: 4em;
+    margin-left: 6.8rem;
     margin-bottom: 1rem;
     margin-right: 4em;
 }
@@ -397,12 +397,34 @@ article {
     width: 3.5em;
 }
 
-/* Estilos opcionais */
+
 h5 {
     font-size: 18px; /* Tamanho do título */
     margin: 0; /* Remova margens padrão para melhorar o espaçamento */
 }
 
+
+.contact-button{
+    display: inline-block;
+    background-color:#490101;
+    color: #fcfcfc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 6.8rem;
+    margin-bottom: 3rem;
+}
+
+.contact-button:hover {
+    background-color: #F2B2AC;
+    color:#490101;
+}
+
+.icon {
+    margin-right: 5px;
+}
 
 
 /* Estilos do footer */
