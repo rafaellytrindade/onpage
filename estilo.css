@@ -4,6 +4,31 @@ html{
     margin: 0;
 }
 
+.main_content_title{
+    padding-top: 4em;
+    padding-bottom: 0.7em;
+    color: #400F0F; 
+    font-size: 2.18em;
+    line-height: 1.3em;
+    font-weight: bold;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p{
+    font-family:'Mooli';
+}
+
+.paragrafo{
+    text-align:justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
 body {
     scroll-behavior: smooth;
 }
@@ -76,22 +101,14 @@ body {
 }
 
 
-/* Estilos do main */
+/* Estilos do main e section */
 
-.sobre{
-    text-align: justify;
-}
-
-#sobre {
-    display: none; 
-    text-align: justify;
-}
 
 .collapse{
     padding-top: 6em;
 }
 
-.container {    
+.container{    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,43 +117,15 @@ body {
     padding: 1em;
 }
 
-
-.main_content_title{
-    padding-top: 4em;
-    padding-bottom: 0.7em;
-    color: #400F0F; 
-    font-size: 2.18em;
-    line-height: 1.3em;
-    font-weight: bold;
-    justify-content: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-p{
-    font-family:'Mooli';
-}
-
-.paragrafo{
-    text-align:justify;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-/* Estilos da section - */
-
-
-.apresentacao {
+.apresentacao{
     margin-top: 2rem;
-  }
+}
 
 .apresentacao h2{
     color: #400F0F; 
     font-size: 3.18em;
     font-weight: 700;
     line-height: 1.3em;
-    
 }
 
 .apresentacao .text h4{
@@ -144,7 +133,6 @@ p{
     font-size: 1.75em;
     font-weight: 500;
 }
-
 
 .apresentacao .text .rule{
     width: 0.625rem;
@@ -154,12 +142,10 @@ p{
     
 }
 
-
 .apresentacao p{
     color:black;
     margin: 0.938rem 0rem 1.875rem;
 }
-
 
 .apresentacao button{
     padding: 0.625rem 1.875rem;
@@ -170,15 +156,11 @@ p{
     position: relative;
     transition: .5s ease-in-out all;
     z-index: 900;
-    
 }
-
 
 .apresentacao button i{
     margin-left: 0.3em;
-    
 }
-
 
 .apresentacao button:before{
     position: absolute;
@@ -191,7 +173,6 @@ p{
     transition: .5s ease-in-out all;
 }
 
-
 .apresentacao button:hover{
     color: #ffffff;
     font-weight: 500;
@@ -202,30 +183,32 @@ p{
     z-index: -1;
 }
 
+.we-img{
+    text-align: center;
+}
 
 .we-img img{
     border: 1em solid #F2B2AC;
     margin-top: 1rem;
 }
 
-img{
-    width: 60%;
-  
-    
-}
 
-
-.profile-image {
+.profile-image{
     max-width: 70%; 
 }
 
 
-.we-img{
-    text-align: center;
+.sobre{
+    text-align: justify;
+}
+
+#sobre{
+    display: none; 
+    text-align: justify;
 }
 
 
-.video-container {
+.video-container{
     max-width: 100%; 
     text-align: center;
     margin-top: 2em;
@@ -243,7 +226,7 @@ iframe{
     font-weight: bold;
 }
 
-#carroseljornada {
+#carroseljornada{
     max-width: 62em; 
     margin: 0 auto;
     margin-top: 2em;
@@ -251,27 +234,21 @@ iframe{
 
 }
 
-.carousel-item {
+.carousel-item{
     height: 18.75em;
 }
 
-
-
-.container_card {
+.container_card{
     display: flex;
     flex-wrap: wrap;
     margin:2em;
 }
   
-
 .card{
-    flex-basis: calc(30% - .9375em);
-    margin: 0.5em;
+    width: 90%;
+    margin: 0.625em auto;
+    box-shadow: .3125em .3125em  .3125em .3125em #F2B2AC;
     padding: 0.625em;
-    display: flex;
-    box-shadow: .3125em .3125em  .3125em .3125em #F2B2AC ; 
-    
-    
 }
 
 .card .card-img-top{
@@ -289,39 +266,38 @@ iframe{
     color: #0f0f0f;
 }
 
-.card .btn-primary {
+.card .btn-primary{
     background-color: #F2B2AC; 
     border: .125em solid #400F0F; 
     color: #0D0D0D; 
 }
 
-.card .btn-secondary {
+.card .btn-secondary{
     background-color: #731D1D; 
     border: .125em solid #F2B2AC; 
     color: #F2E5E4; 
 }
 
 
-.card-body {
+.card-body{
     text-align: center;
 }
 
-.container_skills {
+.container_skills{
     margin-right: auto;
     margin-left: auto;
     width: 80%
 }
 
-.skills .container_skills .cards {
+.skills .container_skills .cards{
     display: flex;
     align-items: center;
     gap: 1.2rem;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
-.skills .container_skills .cards .box {
+.skills .container_skills .cards .box{
     position: relative;
     text-align: center;
     background-color: rgb(255, 250, 250);
@@ -339,7 +315,7 @@ iframe{
     flex-shrink: 0; 
 }
 
-.skills .container_skills .cards .box p {
+.skills .container_skills .cards .box p{
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight:400;
@@ -347,11 +323,11 @@ iframe{
     margin-bottom: 1.5rem
 }
 
-.skills .container_skills .cards .box img {
+.skills .container_skills .cards .box img{
     width: 2.7rem;
 }
 
-.skills .container_skills .cards .box::after {
+.skills .container_skills .cards .box::after{
     content: "";
     display: block;
     position: absolute;
@@ -361,19 +337,18 @@ iframe{
     left: 0
 }
 
-.skills .container_skills .cards .box:hover {
+.skills .container_skills .cards .box:hover{
     transform: scale(1.1)
 }
 
-.container_lista {
+.container_lista{
     display: flex;
     justify-content: center;
     margin-top: 1em;
 }
 
-ul.list-group {
+ul.list-group{
     list-style-type: square; 
-   
 }
 
 .list-group{
@@ -384,33 +359,29 @@ ul.list-group {
     margin-bottom: 1em;
 }
 
-
-article {
+article{
     display: flex;
     align-items: center;
     margin: 1em 2em;
 }
 
-
-.icon-container {
+.icon-container{
     margin-right: 1.625em; 
 }
 
-.text-container {
+.text-container{
     flex-grow: 1; 
     text-align:left;
 }
 
-.config-img {
+.config-img{
     width: 3.5em;
 }
 
-
-h5 {
+h5{
     font-size: 1.125em; 
     margin: 0; 
 }
-
 
 .contact-button{
     display: inline-block;
@@ -423,17 +394,16 @@ h5 {
     transition: background-color 0.3s ease;
     margin-left: 1rem;
     margin-bottom: 3rem;
-    justify-content: center;
-   
+    justify-content: center; 
 }
 
-.contact-button:hover {
-    background-color: #F2B2AC;
+.contact-button:hover{
+    background-color:#F2B2AC;
     color:#490101;
 }
 
-.icon {
-    margin-right:  0.3125em;
+.icon{
+    margin-right:0.3125em;
 }
 
 .flex-list{
@@ -443,7 +413,7 @@ h5 {
 }
 
 /* Estilos do footer */
-footer {
+footer{
     background-color: #F2F2F2;
     color: #2b1010;
     text-align: center;
@@ -488,7 +458,6 @@ footer {
 
     .header_logo{
         margin-left: 2em;
-        
     }
 
 
@@ -503,7 +472,6 @@ footer {
 
     .header_nav li{
         display: inline-block;
-       
     }
 
     .header_nav a{
@@ -515,8 +483,7 @@ footer {
         color: #000000;
     }
 
-
-    .container {
+    .container{
         width: 100%;
         padding: 1em;
     }
@@ -529,12 +496,10 @@ footer {
         width: 100%;
     }
     
-    
     .logos_footer{
         justify-content: center;
         gap:1.5em;
     }
-
 
     .contact-button{
     justify-content: center;
@@ -566,10 +531,10 @@ footer {
         flex-direction: row;
     }
 
-    .card{
-        flex-basis: calc(33.33% - 1.125em);
+    .card {
+        width: 31%;
+        margin: 0.625em;
     }
-   
 
     article {
         flex-direction: row; 
