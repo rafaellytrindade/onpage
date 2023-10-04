@@ -1,7 +1,5 @@
 /* Estilos gerais */
 body {
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -9,22 +7,23 @@ body {
 
 .header{
     background-color: #731D1D;
-    color: #fffffffb;
-    padding: .3rem .3rem;
+    color: #ffffff;
     margin: auto;
-    position: sticky;
-    top:0;
+    position: fixed;
     z-index: 999;
     text-align: center;
     font-size: 1rem;
     padding-top: 1rem;
-    
+    padding: .3rem .3rem;
+    width: 100%;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header_logo{
-    width: 3.5em;
+    width: 4em;
     height: auto;
-    padding-bottom: .4em;
+    margin: .5em;
 }
 
 .header_nav{
@@ -37,9 +36,6 @@ body {
     display: block;
 }
 
-ul{
-    margin: 0;
-}
 
 .header_nav ul{
     padding: 0;
@@ -60,7 +56,7 @@ ul{
 
 
 .header_nav a:hover{
-    background-color: #f2e5e446;
+    background-color: #F9BAAE;
 }
 
 #hamburguer{
@@ -87,7 +83,7 @@ ul{
 }
 
 .collapse{
-    padding-top: 3.4em;
+    padding-top: 6em;
 }
 
 .container {    
@@ -109,7 +105,11 @@ ul{
     font-weight: bold;
     justify-content: flex-start;
     padding-left: 3em;
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family:'Mooli';
 }
 
 .paragrafo{
@@ -117,6 +117,7 @@ ul{
     margin-left: 6.8rem;
     margin-bottom: 1rem;
     margin-right: 4em;
+   
 }
 
 /* Estilos da section - */
@@ -258,7 +259,7 @@ iframe{
     margin: 8px;
     padding: 10px;/* Espaçamento interno do card (ajuste conforme necessário) */
     display: flex;
-    box-shadow: 5px 5px 50px #F2B2AC ; /* Definir a sombra */
+    box-shadow: 5px 5px  5px 5px #F2B2AC ; /* Definir a sombra */
     
     
 }
@@ -380,7 +381,7 @@ ul.list-group {
 article {
     display: flex;
     align-items: center;
-    margin: 1em 4em;
+    margin: 1em 2em;
 }
 
 
@@ -432,8 +433,9 @@ footer {
     background-color: #F2F2F2;
     color: #2b1010;
     text-align: center;
-    padding: 2em;
-
+    padding: 1.5em;
+    width: 100%;
+    margin:0;
 }
 
 .logos_footer{
@@ -467,6 +469,8 @@ footer {
         background-color: #731D1D;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        
     }
 
     .header_logo{
@@ -494,11 +498,25 @@ footer {
     }
 
     .header_nav a:hover{
-        background-color: #e77ab6;
-        color: #ffffff;
+        background-color: #F9BAAE;
+        color: #000000;
     }
 
 
+    .container {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .main_content_title{
+        padding-left: 2em;
+    }
+    
+    .paragrafo{
+        margin-left: 5rem;
+    }
+
+    
     .video-container{
         max-width: 100%;
     }
@@ -507,14 +525,19 @@ footer {
     .logos_footer{
         justify-content: center;
         gap:1.5em;
+        
     }
 
+
+    .contact-button{
+    justify-content: center;
+    }
 
     .skills .container_skills h2{
         margin-bottom:5rem;
     }
 
-    .skills .container_skills .cards .box{
+    .skills .cards .box{
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
@@ -534,16 +557,19 @@ footer {
 
 
     .container_card{
+        
         flex-direction: row;
     }
 
     .card{
         flex-basis: calc(33.33% - 18px);
+        
     }
    
 
     article {
         flex-direction: row; /* Altera para o layout padrão de linha */
+        
     }
 
     .icon-container {
