@@ -4,7 +4,7 @@ Bem-vinda ao repositório do projeto de portfólio do Programa de Desenvolviment
 
 ## O que é o Elas na Tech
 
-O Elas na Tech é um programa de treinamento de desenvolvimento web oferecido pela Elas na Tech, uma organização sem fins lucrativos que visa capacitar mulheres na área de tecnologia. Durante o programa, aprendemos os conceitos básicos de desenvolvimento web, incluindo HTML, CSS e JavaScript, além de frameworks e bibliotecas populares, como Bootstrap.
+O Elas na Tech é um programa de treinamento de desenvolvimento web oferecido pela JA Brasil em parceria com a IBM e Grupo CCR, com o objetivo capacitar mulheres na área de tecnologia. Durante o programa, aprendemos os conceitos básicos de desenvolvimento web, incluindo HTML, CSS e JavaScript, Phyton, além de frameworks e bibliotecas populares, como Bootstrap.
 
 ## Sobre o Projeto de Portfólio
 
