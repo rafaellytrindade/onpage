@@ -1,4 +1,9 @@
 /* Estilos gerais */
+
+html{
+    margin: 0;
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -215,7 +220,7 @@ img{
 
 
 .video-container {
-    max-width: 80rem; 
+    max-width: 100%; 
     text-align: center;
     margin-top: 2em;
     height: 60vh;
@@ -252,6 +257,7 @@ iframe{
 .container_card {
     display: flex;
     flex-wrap: wrap;
+    margin:2em;
 }
   
 .card{
@@ -518,7 +524,7 @@ footer {
 
     
     .video-container{
-        max-width: 100%;
+        width: 100%;
     }
     
     
@@ -557,7 +563,7 @@ footer {
 
 
     .container_card{
-        
+    
         flex-direction: row;
         
     }
