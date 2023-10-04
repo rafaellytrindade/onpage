@@ -210,12 +210,12 @@ img{
     
 }
 .profile-image {
-    max-width: 70%; /* Define a largura máxima da imagem para que ela não ultrapasse o contêiner */
+    max-width: 70%; 
 }
 
 
 .video-container {
-    max-width: 80rem; /* Largura máxima do contêiner */
+    max-width: 80rem; 
     text-align: center;
     margin-top: 2em;
     height: 60vh;
@@ -237,7 +237,7 @@ iframe{
 }
 
 #carroseljornada {
-    max-width: 62.5em; 
+    max-width: 62em; 
     margin: 0 auto;
     margin-top: 2em;
     display: flex;
@@ -245,7 +245,7 @@ iframe{
 }
 
 .carousel-item {
-    height: 300px;
+    height: 18.75em;
 }
 
 
@@ -255,11 +255,11 @@ iframe{
 }
   
 .card{
-    flex-basis: calc(30% - 15px);
-    margin: 8px;
-    padding: 10px;/* Espaçamento interno do card (ajuste conforme necessário) */
+    flex-basis: calc(30% - .9375em);
+    margin: 0.5em;
+    padding: 0.625em;
     display: flex;
-    box-shadow: 5px 5px  5px 5px #F2B2AC ; /* Definir a sombra */
+    box-shadow: .3125em .3125em  .3125em .3125em #F2B2AC ; 
     
     
 }
@@ -280,15 +280,15 @@ iframe{
 }
 
 .card .btn-primary {
-    background-color: #F2B2AC; /* Escolha a cor desejada */
-    border: 2px solid #400F0F; /* Cor da borda desejada */
-    color: #0D0D0D; /* Cor do texto do botão, pode ser branco para contraste */
+    background-color: #F2B2AC; 
+    border: .125em solid #400F0F; 
+    color: #0D0D0D; 
 }
 
 .card .btn-secondary {
-    background-color: #731D1D; /* Escolha a cor desejada */
-    border: 2px solid #F2B2AC; /* Cor da borda desejada */
-    color: #F2E5E4; /* Cor do texto do botão, pode ser branco para contraste */
+    background-color: #731D1D; 
+    border: .125em solid #F2B2AC; 
+    color: #F2E5E4; 
 }
 
 
@@ -326,7 +326,7 @@ iframe{
     border-radius: .3125em;
     cursor: pointer;
     transition: 0.2s;
-    flex-shrink: 0; /* Evita que os boxes sejam encolhidos */
+    flex-shrink: 0; 
 }
 
 .skills .container_skills .cards .box p {
@@ -362,7 +362,7 @@ iframe{
 }
 
 ul.list-group {
-    list-style-type: square; /* Define o tipo de marcador como círculos */
+    list-style-type: square; 
     margin-left: 3em;
     padding-left: 3em;
    
@@ -386,11 +386,11 @@ article {
 
 
 .icon-container {
-    margin-right: 10px; /* Espaçamento à direita do ícone */
+    margin-right: 1.625em; 
 }
 
 .text-container {
-    flex-grow: 1; /* Expande para ocupar todo o espaço disponível à direita do ícone */
+    flex-grow: 1; 
     text-align:left;
 }
 
@@ -400,8 +400,8 @@ article {
 
 
 h5 {
-    font-size: 18px; /* Tamanho do título */
-    margin: 0; /* Remova margens padrão para melhorar o espaçamento */
+    font-size: 1.125em; 
+    margin: 0; 
 }
 
 
@@ -409,8 +409,8 @@ h5 {
     display: inline-block;
     background-color:#490101;
     color: #fcfcfc;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: .625em 1.25em;
+    border-radius: 0.3125em;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -424,7 +424,7 @@ h5 {
 }
 
 .icon {
-    margin-right: 5px;
+    margin-right:  0.3125em;
 }
 
 
@@ -559,26 +559,27 @@ footer {
     .container_card{
         
         flex-direction: row;
+        
     }
 
     .card{
-        flex-basis: calc(33.33% - 18px);
+        flex-basis: calc(33.33% - 1.125em);
         
     }
    
 
     article {
-        flex-direction: row; /* Altera para o layout padrão de linha */
+        flex-direction: row; 
         
     }
 
     .icon-container {
-        margin-right: 20px; /* Aumenta o espaçamento à direita do ícone */
+        margin-right: 1.25em; 
     }
 
     .text-container {
-        flex-grow: 0; /* Impede a expansão para ocupar o espaço disponível */
-        width: auto; /* Define a largura automática para acomodar o conteúdo */
+        flex-grow: 0; 
+        width: auto; 
     }
 
 }
