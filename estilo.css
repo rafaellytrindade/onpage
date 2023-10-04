@@ -108,9 +108,10 @@ body {
     font-size: 2.18em;
     line-height: 1.3em;
     font-weight: bold;
-    justify-content: flex-start;
-    padding-left: 3em;
+    justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 p{
@@ -119,10 +120,8 @@ p{
 
 .paragrafo{
     text-align:justify;
-    margin-left: 6.8rem;
-    margin-bottom: 1rem;
-    margin-right: 4em;
-   
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* Estilos da section - */
@@ -214,6 +213,8 @@ img{
   
     
 }
+
+
 .profile-image {
     max-width: 70%; 
 }
@@ -372,8 +373,6 @@ iframe{
 
 ul.list-group {
     list-style-type: square; 
-    margin-left: 3em;
-    padding-left: 3em;
    
 }
 
@@ -383,7 +382,6 @@ ul.list-group {
 
 .item{
     margin-bottom: 1em;
-    white-space: nowrap;
 }
 
 
@@ -423,8 +421,10 @@ h5 {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-left: 6.8rem;
+    margin-left: 1rem;
     margin-bottom: 3rem;
+    justify-content: center;
+   
 }
 
 .contact-button:hover {
@@ -436,6 +436,11 @@ h5 {
     margin-right:  0.3125em;
 }
 
+.flex-list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 
 /* Estilos do footer */
 footer {
@@ -520,11 +525,6 @@ footer {
         padding-left: 2em;
     }
     
-    .paragrafo{
-        margin-left: 5rem;
-    }
-
-    
     .video-container{
         width: 100%;
     }
@@ -579,6 +579,8 @@ footer {
         margin-right: 1.25em; 
     }
 
-    
+    .flex-list{
+        flex-direction: row;
+    }
 
 }
